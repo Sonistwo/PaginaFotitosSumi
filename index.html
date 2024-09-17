@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="titulito">
+        <p>
+        En esta paginita trae fotitos random de Sumi <br>
+        cada vez que clickeas :3 <br>
+        </p>
+        <span>
+            Pruébalo, dale click al botón "Fotito" <br>
+            >//w//<
+        </span>
+    </div>
+
+    <div class="fotoholder">
+        <img id="foto" src="sumi1.jpg" alt="Fotito épica de Sumicita" width=350px height=350px>
+    </div>
+    <div class="contBoton">
+    <form class="botoncito">
+        <button id="boton">Fotito</button>
+    </form> 
+    <script>
+        const imageUrl = "https://raw.githubusercontent.com/Sonistwo/sumifotitos/main/sumi";
+        const suffix = ".jpg";
+
+        function numeroRandom(min, max){
+            return Math.floor(Math.random() * (max + - min)) + min;
+        }
+
+        function changeImage(){
+            const img = document.getElementById('foto');
+            img.src = imageUrl + numeroRandom(1, 21) + suffix;
+        }
+
+        document.getElementById('boton').addEventListener('click', changeImage())
+
+    </script>
+    </div>
+</body>

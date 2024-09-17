@@ -1,0 +1,62 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    min-width: 400px;
+
+    background: linear-gradient(to bottom, rgba(255, 182, 193, 0.8), rgba(255, 228, 225, 0.8));
+    background-size: cover; /* Ajusta el tamaño del gradiente */
+    background-attachment: fixed; /* Fija el fondo para un efecto suave */
+}
+
+.titulito {
+    text-align: center;
+}
+
+.fotoholder{
+    border-radius: 20px;
+    border-color: black;  
+    max-width: fit-content;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.fotoholder img {
+    border-radius: 8px;
+    transition: opacity 0.5s;
+}
+
+.contBoton {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botoncito button{
+    background-color: #f48fb1; /* Rosa intenso para destacar */
+    color: #fff; /* Texto blanco para buen contraste */
+    border: 2px solid #f48fb1; /* Borde del mismo color que el fondo del botón */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 6px 12px; /* Espaciado interno aumentado */
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    text-transform: uppercase; /* Texto en mayúsculas para resaltar */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+
+.botoncito button:hover{
+    background-color: #fff; /* Fondo blanco al pasar el ratón */
+    color: #f48fb1; /* Texto rosa intenso */
+    border-color: #fff; /* Borde blanco para combinar con el fondo del botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.botoncito button:active{
+    background-color: #f48fb1; /* Regresa al color rosa intenso cuando se hace clic */
+            color: #fff; /* Texto blanco */
+            border-color: #f48fb1; /* Borde del mismo color que el fondo del botón */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más sutil al hacer clic */
+}
